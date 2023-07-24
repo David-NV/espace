@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+#backgroundVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid cyan;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+#telecommade{
+    z-index: 2;
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+    font-size: 2.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+}
+#telecommade:hover{
+    box-shadow: 0px 0px 10px white;
+}
+
+.zones_action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    height: 60%;
+    width: 60%;
+/* border: 1px solid red; */
+}
+.zone{
+    width: 30%;
+    height: 80%;
+    background-color: rgba(0, 4, 80, 0.5);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: 10%; */
+    align-items: center;
+    padding: 0 2%;
+    border: 5px outset rgb(40, 40, 120, 0.3);
+    border-radius: 20px;
+}
+.neon{
+height: 2%;
+width: 40%;
+border: 3px solid rgb(40, 40, 120, 0.5);
+margin-bottom: 5%;
+}
+.ico_zone{
+    font-size: 2em;
+    margin-bottom: 5%;
+    opacity: .8;
+}
+.text_zone{
+    color: rgb(40, 200, 200);
+    /* color: red; */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.zone:hover{
+    box-shadow: 0px 0px 15px rgb(40, 200, 200);
+}
+.zone:hover .neon{
+    box-shadow: 0px 10px 20px 5px rgb(40, 200, 200) ;
+}
+
+
+
+
+
+
